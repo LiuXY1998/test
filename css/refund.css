@@ -1,0 +1,43 @@
+header{
+    width: 100%;
+    height: 1rem;
+    padding: 0.1rem 0.15rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    font-size: 0.38rem;
+    background: #fbfeff;
+
+}
+header > a{
+    color: #4ebbfe;
+}
+
+.first{
+    width: 100%;
+    height: 6rem;
+    background: #ffffff;
+    box-shadow: 0 0.03rem 0.43rem 0
+    rgba(41, 167, 255, 0.13);
+    padding: 0.3rem 0.2rem 0.1rem 0.2rem;
+    box-sizing: border-box;
+}
+
+.second{
+    width: 100%;
+    height: 1.5rem;
+    background: #f1faff;
+    padding: 0.2rem;
+    box-sizing: border-box;
+}
+
+.third{
+    width: 100%;
+    height: 4.8rem;
+    background: #fbfeff;
+    padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+    box-sizing: border-box;
+}
+
