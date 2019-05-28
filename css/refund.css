@@ -39,6 +39,7 @@ header > a{
     background: #fbfeff;
     padding: 0.3rem 0.2rem 0.3rem 0.2rem;
     box-sizing: border-box;
+    position: relative;
 }
 .part1Left {
     width: 2.1rem;
@@ -74,6 +75,19 @@ header > a{
     letter-spacing: 0.01rem;
     color: #000000;
     opacity: 0.6;
+    position: relative;
+}
+.part1Right > h1::before{
+    content: "";
+    width: 0.1rem;
+    height: 0.05rem;
+    background-color: #36a8fe;
+    box-shadow: 0 0.02rem 0.05rem 0
+    rgba(54, 221, 124, 0.43);
+    border-radius: 0.03rem;
+    left: -0.15rem;
+    top: 0.32rem;
+    position: absolute;
 }
 
 .part1Right > h2 {
@@ -86,6 +100,7 @@ header > a{
     position: relative;
 
 }
+
 
 .part1Right > h3 {
     font-size: 0.22rem;
@@ -125,37 +140,61 @@ header > a{
     bottom: 0.5rem;
     right: 0.25rem;
 }
+
 .part2 {
     width: 100%;
     height: 1rem;
     box-sizing: border-box;
     display: inline-block;
+    border-bottom: 1px solid #e4e3e3;
+
 }
 .part2 > h1{
-
     font-size: 0.26rem;
     font-weight: normal;
     font-stretch: normal;
     line-height: 0.4rem;
     letter-spacing: 0.02rem;
     color: #474747;
+    margin-left: 0.2rem;
+    margin-top: 0.2rem;
+    display: inline;
+    position: relative;
+}
+.part2 > h1 ::before{
+    content: "";
+    width: 0.1rem;
+    height: 0.05rem;
+    background-color: #44b5ff;
+    box-shadow: 0 0.02rem 0.05rem 0
+    rgba(68, 181, 255, 0.43);
+    border-radius: 0.03rem;
+    position: absolute;
+    left: -0.15rem;
+    top: 0.15rem;
 }
 
 .part2 > h1 >span{
     font-size: 0.26rem;
     font-weight: normal;
-    letter-spacing: 0.2rem;
     color: #41b2fc;
 }
+.part2 > h2{
+    display: inline;
+
+
+}
+
 .part2 > h2 > a {
     font-size: 0.26rem;
     font-weight: normal;
     font-stretch: normal;
     letter-spacing: 0.01rem;
-    color: #000000;
     opacity: 0.6;
     float: right;
+    margin-top: 0.2rem;
     margin-right: 0.2rem;
+    color: #36a8fe;
 }
 
 .part3 {
@@ -163,6 +202,7 @@ header > a{
     height: 1.5rem;
     box-sizing: border-box;
     display: inline-block;
+    padding: 0.2rem 0.2rem;
 
 }
 
@@ -173,12 +213,28 @@ header > a{
     line-height: 0.4rem;
     letter-spacing: 0.02rem;
     color: #474747;
+    display: inline;
+    position: relative;
 }
+.part3 > h1 ::before{
+    content: "";
+    width: 0.1rem;
+    height: 0.05rem;
+    background-color: #44b5ff;
+    box-shadow: 0 0.02rem 0.05rem 0
+    rgba(68, 181, 255, 0.43);
+    border-radius: 0.03rem;
+    position: absolute;
+    left: -0.15rem;
+    top: 0.15rem;
+}
+
 .part3 > h1 > p{
     font-size: 0.26rem;
     font-weight: normal;
     letter-spacing: 0.02rem;
     color: #fcbc41;
+    display: inline;
 }
 .part3 > h1 > span{
     font-size: 0.22rem;
@@ -187,6 +243,7 @@ header > a{
     letter-spacing: 0.01rem;
     color: #000000;
     opacity: 0.3;
+    display: inline;
 }
 .part3 > h2 {
     font-size: 0.32rem;
@@ -196,8 +253,75 @@ header > a{
     color: #fcbc41;
 }
 
+.second{
+    padding: 0.2rem 0.4rem;
+}
+.second > h1{
+    font-size: 0.24rem;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0.01rem;
+    color: #b9c9d2;
+}
 
 
+.third > h1 {
+    font-size: 0.26rem;
+    font-weight: normal;
+    font-stretch: normal;
+    line-height: 0.4rem;
+    letter-spacing: 0.02rem;
+    color: #474747;
+    display: inline;
+    margin-left: 0.2rem;
+    position: relative;
+}
+.third >h1 ::before{
+    content: "";
+    width: 0.1rem;
+    height: 0.05rem;
+    background-color: #36dd7c;
+    box-shadow: 0 0.02rem 0.05rem 0
+    rgba(54, 221, 124, 0.43);
+    border-radius: 0.03rem;
+    left: -0.15rem;
+    top: 0.15rem;
+    position: absolute;
+}
+
+.third > h1> p{
+    font-size: 0.26rem;
+    font-weight: normal;
+    letter-spacing: 0.02rem;
+    color: #31d094;
+    display: inline;
+}
+.third > h1 >span{
+    font-size: 0.22rem;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0.01rem;
+    color: #000000;
+    opacity: 0.3;
+    display: inline;
+}
+.third > h2{
+    position: absolute;
+    left: 0.3rem;
+    top: 0.8rem;
+}
+.third > h2 > a > img{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.third > h3{
+    position: absolute;
+    left: 1.5rem;
+    top:3rem;
+    width: 4.54rem;
+    height: 1rem;
+}
 
 
 
