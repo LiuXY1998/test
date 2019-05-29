@@ -14,7 +14,7 @@
 
 <header>
     <a href="./refund.html" class="iconfont icon-fanhui">    </a>
-    <span>退款详情</span>
+    <p>退款详情</p>
     <a href=""></a>
 </header>
 
@@ -26,7 +26,7 @@
 
     <div class="two">
         <h5>&nbsp;</h5>
-        <h1>还剩<span>01</span>天<span>23</span>时<span>26</span>分</h1>
+        <h1>还剩<span>01</span>天<span>23</span>时<span>26</span>分<span>02</span>秒</h1>
         <h2>"您已成功发起退货申请，请耐心等待商家处理，此订单已投保运费险（商家同意退货后，选择上门取件，慢必赔）。</h2>
         <h2>商家同意后，请按照给出的退货地址退货，并请记录退货运单号。</h2>
         <h2>如商家拒绝，您可以修改申请后再次发起，商家会重新处理</h2>
@@ -36,6 +36,34 @@
             <p><a href=""><img src="./image/修改.png" alt=""></a></p>
         </div>
     </div>
+    <script>
+        window.onload =function () {
+            let spans = document.getElementsByTagName("span");
+
+            fn();
+            setInterval(fn,1000);
+
+            function fn() {
+                let arr = [];
+                let date =new Date();
+                let dw=new Date(2019,5,7,0,0,0);
+
+                let time =Math.floor((dw.getTime()-date.getTime())/1000);
+                let day =Math.floor(time/60/60/24);
+                arr.push(day);
+                time%=(60*60*24);
+                let hours=Math.floor(time/(60*60));
+                arr.push(hours);
+                time%=(60*60);
+                let min = Math.floor(time/60);
+                let sec =time %60;
+                arr.push(min,sec);
+                arr.forEach(function (value,index) {
+                    spans[index].innerHTML = value
+                })
+            }
+        }
+    </script>
 
     <div class="three">
         <h1>退款<span>信息</span></h1>
