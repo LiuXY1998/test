@@ -1,0 +1,16 @@
+header{
+    width: 100%;
+    height: 1rem;
+    padding: 0.1rem 0.15rem;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    line-height: 0.88rem;
+    color: #4ebbfe;
+    font-size: 0.38rem;
+    background: #fbfeff;
+
+}
+header > a{
+    color: #4ebbfe;
+}
