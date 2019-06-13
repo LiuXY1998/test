@@ -8,7 +8,7 @@ window.onload =function () {
     function fn() {
         let arr = [];
         let date =new Date();
-        let dw=new Date(2019,5,7,0,0,0);
+        let dw=new Date(2019,5,12,0,0,0);
 
         let time =Math.floor((dw.getTime()-date.getTime())/1000);
         let day =Math.floor(time/60/60/24);
